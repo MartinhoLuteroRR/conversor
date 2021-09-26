@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Conversor - ID3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <h1 class="page-title">
+    Conversor de Moedas
+  </h1>
+  <p class="page-subtitle">
+    Transforme os valores de Dolar U$ para outras moedas
+  </p><br><br>
+  <label for="moeda">Insira o valor</label><br>
+  <input type="number" id="valor" size="2" /><br>
+  <button type="submit" onclick="converterParaReal() ; converterParaBitcoin()">Converter para R$</button>
+  <button type="submit" onclick="converterParaEuro() ; converterParaBitcoin()">Converter para €</button>
+  <h2 id="valorConvertido"></h2>
+  <h2 id="valorConvertidoBitcoin"></h2>
+</div>
+
+<div class="container">
+  <h1 class="page-title">
+    Conversor de Temperatura
+  </h1>
+  <p class="page-subtitle">
+    Transforme os valores de Celsius °C para outras temperatura
+  </p><br><br>
+  <label for="temperatura">Insira a temperatura</label><br>
+  <input type="number" id="temperatura" size="2" /><br>
+  <button type="submit" onclick="converterParaFarenheit()">Converter para Farenheit °F</button>
+  <button type="submit" onclick="converterParaKelvin()">Converter para Kelvin °K</button>
+  <h2 id="temperaturaConvertido"></h2>
+</div>
+<a href="https://alura.com.br/" target="_blank">
+  <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
